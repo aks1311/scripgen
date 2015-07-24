@@ -1,0 +1,225 @@
+{	
+	"paramList":[
+		{"name":"K","title":"K","order":"0","dataType":"string","listName":"","defaultSelected":"true","defaultValue":"flutter","isReadOnly":"true",
+				"description":"Path to the model's stiffness matrix (saved in the NASTRAN Output4 format)Define the analysis as a flutter analysis", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix","File Name (OP4)"
+				],
+				"columnTypes":[
+					"int","file"
+				],
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"D","title":"D","order":"1","dataType":"","listName":"","defaultSelected":"false",
+				"description":"Path to the model's damping matrix (saved in the NASTRAN Output4 format), optional (then the damping matrix is zero)", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix","File Name (OP4)"
+				],
+				"columnTypes":[
+					"int","file"
+				],
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"M","title":"M","order":"2","dataType":"","listName":"","defaultSelected":"true",
+				"description":"Path to the model's mass matrix (saved in the NASTRAN Output4 format).", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix","File Name (OP4)"
+				],
+				"columnTypes":[
+					"int","file"
+				],
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"g_struct","title":"g_struct","order":"3","dataType":"float","listName":"","defaultSelected":"true",
+				"description":"Structural Damping value (g)", "shortDesc":"",
+				"defaultValue":"0.0",
+				"isTabularData":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"GAF","title":"GAF","order":"4","dataType":"","listName":"","defaultSelected":"true","defaultValue":"1.0",
+				"description":"Paths to the model's generalized aerodynamics matrices (complex, saved in the NASTRAN Output format).", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Mach Number","Reduced Frequency","Position of Matrix","Name of OP4 File"
+				],
+				"columnTypes":[
+					"float","float","int","file"
+				],
+				"isPAEnabled":"false",
+				"isSingleRow":"false"
+		},
+		{"name":"GAF_method","title":"",
+				"order":"5","dataType":"list","listName":"gaf-interpretation","defaultSelected":"true",
+				"description":"Defines the way to use the generalized aerodynamics when imported with GAF. This has effects on the influence of the damping on the aerodynamics, but not on the flutter points", "shortDesc":"",
+				"isTabularData":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"GAF_RAE","title":"","order":"6","dataType":"","listName":"","defaultSelected":"true","defaultValue":"1.0",
+				"description":"Paths to the model's generalized aerodynamics matrices (real, saved in the NASTRAN Output4 format) in the RAEformulation (aerodynamic damping [B] and stiffness [C] matrices). GAF_method does not apply for these aerodynamic matrices. A factor can be defined to use also this input for the BAE-formulation.", 
+				"shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Mach Number","Reduced Frequency","Conversion Factor","Position of B Matrix","Name of OP4 File","Position of C Matrix","Name of OP4 File"
+				],
+				"columnTypes":[
+					"float","float","float","int","file","int","file"
+				]
+		},
+		{"name":"FCS","title":"","order":"7","dataType":"","listName":"","defaultSelected":"false","defaultValue":"",
+				"description":"Flight-Control System (FCS) properties of the model, activates the analysis with FCS automatically", "shortDesc":"",
+				"isTabularData":"true",
+				"isSingleRow":"true",
+				"isMandatory":"false",
+				"columnNames":[
+					"Methods for Defining FCS","Conversion Method for the inversion (s*I-A)","Approximation Method"
+				],
+				"columnTypes":[
+					"list:FCS-Definition Method","list:FCS-Inversion Computation Method","list:FCS-Approximation Method"
+				]
+		},
+		{"name":"FCS_state_space_A","title":"","order":"8","dataType":"","listName":"",
+				"defaultSelected":"true","description":"Path to the FCS state (or system) matrix A (real, saved in the NASTRAN Output4 format) in state-space modeling.", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"FCS_state_space_B","title":"","order":"9","dataType":"","listName":"",
+				"defaultSelected":"true","description":"Path to the FCS state (or system) matrix B (real, saved in the NASTRAN Output4 format) in state-space modeling.", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"FCS_state_space_C","title":"","order":"10","dataType":"","listName":"",
+				"defaultSelected":"true","description":"Path to the FCS state (or system) matrix C (real, saved in the NASTRAN Output4 format) in state-space modeling.", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"FCS_state_space_D","title":"","order":"11","dataType":"","listName":"",
+				"defaultSelected":"true","description":"Path to the FCS feed through (or feed forward) matrix D (real, saved in the NASTRAN Output4 format) in state-space modelling, optional (then the D matrix is zero).", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"FCS_modal2sensors","title":"","order":"12","dataType":"","listName":"","defaultSelected":"true","defaultValue":"",
+				"description":"Path to the matrix relating the modal amplitudes (input of the FCS) to the sensors' displacements (saved in the NASTRAN Output4 format).", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"FCS_actuators2modal","title":"","order":"13","dataType":"","listName":"","defaultSelected":"true","defaultValue":"",
+				"description":"Path to the matrix relating the actuators' (or control surfaces') movement (output of the FCS) to the modal amplitudes (saved in the NASTRAN Output4 format).", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Position of Matrix File","Name of OP4 File"
+				],
+				"columnTypes":[
+					"string","file"
+				],
+				"isMandatory":"false",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"Aero_interp","title":"","order":"14","dataType":"list","listName":"aero-interpolation-method","defaultSelected":"true","defaultValue":"",
+				"description":"Interpolation method for the aerodynamics", "shortDesc":""
+		},
+		{"name":"Aero_extrap","title":"","order":"15","dataType":"list","listName":"aero-extrapolation-method","defaultSelected":"true","defaultValue":"",
+				"description":"Extrapolation method for the aerodynamics", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Method for Mach Number","Method for Reduced Frequency"
+				],
+				"columnTypes":[
+					"list:aero-extrapolation-method","list:aero-extrapolation-method"
+				],
+				"isMandatory":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"L_ref","title":"","order":"16","dataType":"float","listName":"","defaultSelected":"true","defaultValue":"",
+				"description":"Reference length for the aerodynamics (e.g. reduced frequency: k=ω*L_ref/V)", "shortDesc":""
+		},
+		{"name":"rm_dof","title":"","order":"17","dataType":"float","listName":"","defaultSelected":"true","defaultValue":"1.0",
+				"description":"Remove some degrees of freedom of the input (modal) matrices by suppressing the rows and columns bound to them", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Degree of freedom to be removed"
+				],
+				"columnTypes":[
+					"int"
+				],
+				"isPAEnabled":"false"		}
+	],
+	"lists":[
+		{"name":"gaf-interpretation","list":[
+			{"id":"Hassig", "value":"Hassig"},
+			{"id":"Rodden", "value":"Rodden"},
+			{"id":"g-method", "value":"g-method"}
+		]},
+		{"name":"FCS-Definition Method","list":[
+			{"id":"state-space", "value":""}
+		]},
+		{"name":"FCS-Inversion Computation Method","list":[
+			{"id":"direct", "value":""},
+			{"id":"lerrier", "value":""},
+			{"id":"eig", "value":""},
+			{"id":"jordan", "value":""},
+			{"id":"interp", "value":""}
+		]},
+		{"name":"FCS-Approximation Method","list":[
+			{"id":"exact", "value":""},
+			{"id":"imaginary", "value":""}
+		]},
+		{"name":"aero-interpolation-method","list":[
+			{"id":"linear", "value":""},
+			{"id":"pchip", "value":""}
+		]},
+		{"name":"aero-extrapolation-method","list":[
+			{"id":"constant", "value":""},
+			{"id":"linear", "value":""},
+			{"id":"interp", "value":""}
+		]}
+	]
+}

@@ -1,0 +1,224 @@
+{	
+	"paramList":[
+		{"name":"analysis","title":"Analysis","order":"0","dataType":"string","listName":"","defaultSelected":"true",
+				"defaultValue":"flutter","isReadOnly":"true",
+				"description":"Define the analysis as a flutter analysis", "shortDesc":"","isPAAllowed":"false"},
+		{"name":"flutter","title":"Flutter Method","order":"1","dataType":"","listName":"","defaultSelected":"true",
+				"description":"PK-method, direct eigensolver", "shortDesc":"",
+				"isPAAllowed":"false",
+				"isTabularData":"true",
+				"columnNames":[
+					"Flutter Method","Eigen mode"
+				],
+				"columnTypes":[
+					"list:flutter-method","list:eigen-mode"
+				],
+				"validationRules":"{1}!=null && {2}!=null#'{1}' and '{2}' are mandatory.",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"flutter_altitude","title":"Flutter Altitude","order":"2","dataType":"","listName":"","defaultSelected":"true",
+				"description":"Geo-potential altitude in m for the analysis", "shortDesc":"",
+				"isPAAllowed":"true",
+				"isTabularData":"true",
+				"columnNames":[
+					"Type of Altitude","Value of Altitude"
+				],
+				"columnTypes":[
+					"list:altitude-type","float"
+				],
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"flutter_Mach","title":"Flutter Mach","order":"3","dataType":"","listName":"","defaultSelected":"true",
+				"description":"Mach number is matched to each speed-steps (Mach=V/Vsound)", "shortDesc":"",
+				"isPAAllowed":"true",
+				"isTabularData":"true",
+				"columnNames":[
+					"Method of Definition","Mach Number"
+				],
+				"columnTypes":[
+					"list:definition-method-mach","float"
+				],
+				"validationRules":"(({1}.id.equals('fixed') && {2}!=null) || !{1}.id.equals('fixed') && {2}==null)#For '{1}' as 'fixed', '{2}' is mandatory.\nFor other values of '{1}', '{2}' should be blank.",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"flutter_density","title":"Flutter Density","order":"4","dataType":"","listName":"","defaultSelected":"true",
+				"description":"The density is computed with the ISA standard atmosphere out of the altitude", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Method of Definition","Density"
+				],
+				"columnTypes":[
+					"list:definition-method-density","float"
+				],
+				"isPAEnabled":"false",
+				"isPAAllowed":"true",
+				"validationRules":"(({1}.id.equals('fixed') && {2}!=null) || !{1}.id.equals('fixed') && {2}==null)#For '{1}' as 'fixed', '{2}' is mandatory.\nFor other values of '{1}', '{2}' should be blank.",
+				"isSingleRow":"true"
+		},
+		{"name":"flutter_V_sound","title":"Flutter V Sound",
+				"order":"5","dataType":"","listName":"","defaultSelected":"true",
+				"description":"The speed of sound is computed with the ISA standard atmosphere out of the altitude", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Method of definition","Air Speed"
+				],
+				"columnTypes":[
+					"list:definition-method-density","float"
+				],
+				"isPAAllowed":"true",
+				"isPAEnabled":"false",
+				"validationRules":"(({1}.id.equals('fixed') && {2}!=null) || !{1}.id.equals('fixed') && {2}==null)#For '{1}' as 'fixed', '{2}' is mandatory.\nFor other values of '{1}', '{2}' should be blank.",
+				"isSingleRow":"true"
+		},
+		{"name":"conv_model2SI_density","title":"Density Conversion Factor","order":"6","dataType":"float","listName":"","defaultSelected":"true",
+				"defaultValue":"1.0",
+				"isPAAllowed":"true",
+				"description":"Conversion factor between the density in model units and SI", "shortDesc":"",
+				"validationRules":"{1}=='Inf' || {1}=='-Inf' || parseFloat({1})>0.0#'{1}' should be positive."},
+		{"name":"conv_model2SI_speed","title":"Speed Conversion Factor","order":"7","dataType":"float","listName":"","defaultSelected":"true",
+				"defaultValue":"1.0",
+				"isPAAllowed":"true",
+				"description":"Conversion factor between the speed in model units and SI. Also used for lengths (cf. L_ref)", "shortDesc":""},
+		{"name":"flutter_start_fbound","title":"Flutter Frequency Interval","order":"8","dataType":"","listName":"",
+				"defaultSelected":"true","description":"interval of frequencies (if the time unit is in second, then in Hertz) have to be considered at the first speed step (defined in flutter_V)", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"Lower Bound","Upper Bound"
+				],
+				"columnTypes":[
+					"string","string"
+				],
+				"isPAAllowed":"true",
+				"isPAEnabled":"false",
+				"isSingleRow":"true"
+		},
+		{"name":"flutter_frequency_tolerance","title":"Flutter Frequency Tolerance","order":"9","dataType":"float","listName":"","defaultSelected":"true","defaultValue":"1.0E-7",
+				"description":"Convergence tolerance for the flutter eigenvalues, in frequency (if the time unit is in second, then in Hertz)", 
+				"shortDesc":"",
+				"isPAAllowed":"true"
+		},
+		{"name":"flutter_maxit","title":"Flutter Max Iterations","order":"10","dataType":"int","listName":"","defaultSelected":"true","defaultValue":"100",
+				"description":"Maximum number of iterations for the convergence of flutter eigenvalues", "shortDesc":"",
+				"isPAAllowed":"true",
+				"isPAEnabled":"true",
+				"validationRules":"/^\\d+$/.test({1}) && parseInt({1})>0#'{1}' should be positive integer."
+				},
+		{"name":"flutter_V","title":"Speed Steps","order":"11","dataType":"",
+				"listName":"","defaultSelected":"true",
+				"description":"Speed steps (True Air Speed, in SI, i.e. m/s) for the flutter analysis.", "shortDesc":"",
+				"isTabularData":"true",
+				"columnNames":[
+					"First Step","Last Step","No. of Speed Steps"
+				],
+				"columnTypes":[
+					"float","float","int"
+				],
+				"isPAAllowed":"true",
+				"isPAEnabled":"false",
+				"validationRules":"parseFloat({1})<parseFloat({2})#{1} should be less than {2};{1}!=null#{1} is mandatory;{2}!=null#{2} is mandatory;{3}!=null#{3} is mandatory;{3}>-1#{3} should be positive;",
+				"isSingleRow":"false"
+		},
+		{"name":"model_filename","title":"Model File name","order":"12","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the model-file", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_plot_g","title":"Flutter Plot G","order":"13","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the output containing the results (damping) of IDEA.", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_plot_f","title":"Flutter Plot F","order":"14","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the output containing the results (frequency) of IDEA.", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_plot_Re_eigenvalue","title":"Flutter Plot Re Eigen","order":"15","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the output containing the results (real part of the eigenvalues) of IDEA", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_plot_Im_eigenvalue","title":"Flutter Plot Im Eigen","order":"16","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the output containing the results (imaginary part of the eigenvalues) of IDEA.", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_plot_Iterations","title":"Flutter Plot Iterations","order":"17","dataType":"file","listName":"","defaultSelected":"true","description":"Name of the output containing the results (number of iterations) of IDEA", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_points","title":"Flutter Points","order":"18","dataType":"file","listName":"","defaultSelected":"true",
+				"description":"Defines the name of the output containing the results (flutter points) of IDEA", 
+				"isPAAllowed":"true",
+				"shortDesc":""},
+		{"name":"flutter_eigenvectors","title":"Flutter Eigen Vectors","order":"19","dataType":"file","listName":"","defaultSelected":"true",
+				"description":"Defines the name of the output containing the results (flutter eigen vectors) of IDEA.", 
+				"isPAAllowed":"true",
+				"shortDesc":""},
+		{"name":"flutter_plot_variable","title":"Flutter Plot Variable","order":"20","dataType":"list","listName":"flutter-plot-variable","defaultSelected":"true","defaultValue":"TAS",
+				"description":"For the output files, which flutter variable has to be written (TAS, EAS or dynamic pressure)", 
+				"isPAAllowed":"true",
+				"shortDesc":""
+		},
+		{"name":"flutter_point_variable_SI2output","title":"Flutter Plot Conversion Factor","order":"21","dataType":"float","listName":"","defaultSelected":"true","defaultValue":"1.0",
+				"description":"Flutter curves in m/s factor to multiply the flutter variable in SI with to obtain the wished unit in the output-files",
+				"isPAAllowed":"true",
+				"shortDesc":""
+		}
+	],
+	"lists":[
+		{"name":"flutter-method","list":[
+			{"id":"PK", "value":"PK"}
+		]},
+		{"name":"eigen-mode","list":[
+			{"id":"eig", "value":"QZ algorithm"},
+			{"id":"RQI", "value":"Rayleigh-Quotient Iteration"}
+		]},
+		{"name":"altitude-type","list":[
+			{"id":"geopotential", "value":"QZ algorithm"},
+			{"id":"geometric", "value":"Rayleigh-Quotient Iteration"}
+		]},
+		{"name":"definition-method-mach","list":[
+			{"id":"fixed", "value":""},
+			{"id":"matched", "value":""}
+		]},
+		{"name":"definition-method-density","list":[
+			{"id":"fixed", "value":""},
+			{"id":"ISA", "value":""}
+		]},
+		{"name":"flutter-plot-variable","list":[
+			{"id":"TAS", "value":""},
+			{"id":"EAS", "value":""},
+			{"id":"dynamic_pressure", "value":""}
+		]},
+		
+		{"name":"gaf-interpretation","list":[
+			{"id":"Hassig", "value":"Hassig"},
+			{"id":"Rodden", "value":"Rodden"},
+			{"id":"g-method", "value":"g-method"}
+		]},
+		{"name":"FCS-Definition Method","list":[
+			{"id":"state-space", "value":""}
+		]},
+		{"name":"FCS-Inversion Computation Method","list":[
+			{"id":"direct", "value":""},
+			{"id":"lerrier", "value":""},
+			{"id":"eig", "value":""},
+			{"id":"jordan", "value":""},
+			{"id":"interp", "value":""}
+		]},
+		{"name":"FCS-Approximation Method","list":[
+			{"id":"exact", "value":""},
+			{"id":"imaginary", "value":""}
+		]},
+		{"name":"aero-interpolation-method","list":[
+			{"id":"linear", "value":""},
+			{"id":"pchip", "value":""}
+		]},
+		{"name":"aero-extrapolation-method","list":[
+			{"id":"constant", "value":""},
+			{"id":"linear", "value":""},
+			{"id":"interp", "value":""}
+		]}
+		
+	]
+	
+}

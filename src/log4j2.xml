@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns:log4j="http://jakarta.apache.org/log4j/" status="INFO">
+  <Appenders>
+	<Console name="Console" target="SYSTEM_OUT">
+		<PatternLayout pattern="%d{[dd-MMM] HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+	</Console>
+  	<File name="uiLogs" fileName="idea-log/idea-gui.log">
+		<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+		<PatternLayout pattern="%d{[dd-MMM] HH:mm:ss} - %msg%n" />
+	</File>
+	<RollingFile name="debugLogs" fileName="idea-log/app.log" filePattern="idea-log/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+		<PatternLayout pattern="%d{[dd-MMM] HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+		<Policies>
+	        <TimeBasedTriggeringPolicy />
+	        <SizeBasedTriggeringPolicy size="250 MB"/>
+	    </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Root level="INFO">
+      	<AppenderRef ref="debugLogs"/>
+	</Root>
+    <Logger name="com.airbusds" level="DEBUG">
+    	<AppenderRef ref="Console"/>
+    	<AppenderRef ref="uiLogs"/>
+    </Logger>
+  </Loggers>
+</Configuration>
