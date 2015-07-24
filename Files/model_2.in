@@ -1,0 +1,24 @@
+K   1  "'my_path/KHH.OP4'"
+M   1  "'my_path/MHH.OP4'"
+
+# GAFs from small disturbance-Euler
+GAF 0.499 0.0  1  "'my_path/QHHS0101.OP4'" &
+&   0.499 0.01 1  "'my_path/QHHS0102.OP4'" &
+&   0.499 0.1  1  "'my_path/QHHS0103.OP4'" &
+&   0.499 0.3  1  "'my_path/QHHS0104.OP4'" &
+&   0.499 1.0  1  "'my_path/QHHS0105.OP4'" &
+&   0.499 3.7  1  "'my_path/QHHS0106.OP4'" &
+&   0.678 0.0  1  "'my_path/QHHS0201.OP4'" &
+&   0.678 0.01 1  "'my_path/QHHS0202.OP4'" &
+&   0.678 0.1  1  "'my_path/QHHS0203.OP4'" &
+&   0.678 0.3  1  "'my_path/QHHS0204.OP4'" &
+&   0.678 1.0  1  "'my_path/QHHS0205.OP4'" &
+&   0.678 3.7  1  "'my_path/QHHS0206.OP4'"
+
+Aero_interp pchip
+
+Aero_extrap constant linear
+
+GAF_method g-Method
+
+L_ref 0.2352

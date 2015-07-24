@@ -1,0 +1,45 @@
+# Define the analysis as a flutter analysis
+analysis flutter
+# PK-method, direct eigensolver
+flutter  PK eig
+# Geo-potential altitude in m for the analysis
+flutter_altitude  geopotential 0
+# Mach number is matched to each speed-steps (Mach=V/Vsound)
+flutter_Mach  fixed 0.499
+# The density is computed with the ISA standard atmosphere out of the altitude
+flutter_density  fixed 0.427648
+# The speed of sound is computed with the ISA standard atmosphere out of the altitude
+flutter_V_sound  fixed 345.59
+# Conversion factor between the density in model units and SI
+conv_model2SI_density  1.0
+# Conversion factor between the speed in model units and SI. Also used for lengths (cf. L_ref)
+conv_model2SI_speed  1.0
+# interval of frequencies (if the time unit is in second, then in Hertz) have to be considered at the first speed step
+#  (defined in flutter_V)
+flutter_start_fbound  -0.01 Inf
+# Convergence tolerance for the flutter eigenvalues, in frequency (if the time unit is in second, then in Hertz)
+flutter_frequency_tolerance  1.0E-7
+# Maximum number of iterations for the convergence of flutter eigenvalues
+flutter_maxit  100
+# Speed steps (True Air Speed, in SI, i.e. m/s) for the flutter analysis.
+flutter_V  50 320 271
+# Name of the model-file
+model_filename  '"model.in"'
+# Name of the output containing the results (damping) of IDEA.
+flutter_plot_g  '"Vg_AGARD"'
+# Name of the output containing the results (frequency) of IDEA.
+flutter_plot_f  '"Vf_AGARD"'
+# Name of the output containing the results (real part of the eigenvalues) of IDEA
+flutter_plot_Re_eigenvalue  '"V_Res_AGARD"'
+# Name of the output containing the results (imaginary part of the eigenvalues) of IDEA.
+flutter_plot_Im_eigenvalue  '"V_Ims_AGARD"'
+# Name of the output containing the results (number of iterations) of IDEA
+flutter_plot_Iterations  '"V_It_AGARD"'
+# Defines the name of the output containing the results (flutter points) of IDEA
+flutter_points  '"Fp_AGARD"'
+# Defines the name of the output containing the results (flutter eigen vectors) of IDEA.
+flutter_eigenvectors  '"Fm_AGARD"'
+# For the output files, which flutter variable has to be written (TAS, EAS or dynamic pressure)
+flutter_plot_variable  TAS
+# Flutter curves in m/s factor to multiply the flutter variable in SI with to obtain the wished unit in the output-files
+flutter_point_variable_SI2output  1.0

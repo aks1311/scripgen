@@ -1,0 +1,18 @@
+# Path to the model's stiffness matrix (saved in the NASTRAN Output4 format)Define the analysis as a flutter analysis
+K  1 '"my_path/KHH.OP4"'
+# Path to the model's mass matrix (saved in the NASTRAN Output4 format).
+M  1 '"my_path/MHH.OP4"'
+# Structural Damping value (g)
+g_struct  0.0
+# Paths to the model's generalized aerodynamics matrices (complex, saved in the NASTRAN Output format).
+GAF  00.499 0 1 '"my_path/QHHS0101.OP4"' &
+&       0.499 0.01 1 '"my_path/QHHS0102.OP4"'
+# Defines the way to use the generalized aerodynamics when imported with GAF. This has effects on the influence of the
+#  damping on the aerodynamics, but not on the flutter points
+GAF_method  Hassig
+# Interpolation method for the aerodynamics
+Aero_interp  pchip
+# Extrapolation method for the aerodynamics
+Aero_extrap  constant linear
+# Reference length for the aerodynamics (e.g. reduced frequency: k=ω*L_ref/V)
+L_ref  1

@@ -1,0 +1,23 @@
+# Path to the model's stiffness matrix (saved in the NASTRAN Output4 format)Define the analysis as a flutter analysis
+K  1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/KHH.OP4"'
+# Path to the model's mass matrix (saved in the NASTRAN Output4 format).
+M  1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/MHH.OP4"'
+# Structural Damping value (g)
+g_struct  0.0
+# Paths to the model's generalized aerodynamics matrices (complex, saved in the NASTRAN Output format).
+GAF  0.499 0.0 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0101.OP4"' &
+&       0.499 0.01 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0102.OP4"' &
+&       0.499 0.1 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0103.OP4"' &
+&       0.499 0.3 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0104.OP4"' &
+&       0.499 1.0 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0105.OP4"' &
+&       0.499 3.7 1 '"/caegrp/AeroAnalysis/IDEA/users/Cyrille/data/AGARD-wing-445.6/QHHS0106.OP4"'
+# Defines the way to use the generalized aerodynamics when imported with GAF. This has effects on the influence of the
+#  damping on the aerodynamics, but not on the flutter points
+GAF_method  g-method
+# Interpolation method for the aerodynamics
+Aero_interp  pchip
+# Extrapolation method for the aerodynamics
+Aero_extrap  constant linear
+### NASTRAN/ZAERO => 0.4704/2 ###
+# Reference length for the aerodynamics (e.g. reduced frequency: k=?*L_ref/V)
+L_ref  0.2352

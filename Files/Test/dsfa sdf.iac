@@ -1,0 +1,2381 @@
+{
+  "name" : "dsfa sdf",
+  "type" : "Flutter",
+  "analysisLocation" : "C:\\AmitSingh\\Projects\\08-IDEA-GUI\\Workspace\\Files\\Test",
+  "author" : null,
+  "createdDate" : null,
+  "endDate" : null,
+  "paramIn" : {
+    "name" : "param.in",
+    "parameters" : [ {
+      "name" : "flutter_altitude",
+      "title" : "Flutter Altitude",
+      "dataType" : "",
+      "order" : 2,
+      "description" : "Geo-potential altitude in m for the analysis",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Type of Altitude", "Value of Altitude" ],
+      "columnTypes" : [ "list:altitude-type", "float" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "geopotential"
+      }, {
+        "value" : 0.0
+      } ] ]
+    }, {
+      "name" : "flutter_frequency_tolerance",
+      "title" : "Flutter Frequency Tolerance",
+      "dataType" : "float",
+      "order" : 9,
+      "description" : "Convergence tolerance for the flutter eigenvalues, in frequency (if the time unit is in second, then in Hertz)",
+      "shortDescription" : "",
+      "value" : {
+        "value" : 1.0E-7
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_points",
+      "title" : "Flutter Points",
+      "dataType" : "file",
+      "order" : 18,
+      "description" : "Defines the name of the output containing the results (flutter points) of IDEA",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "Fp_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_eigenvectors",
+      "title" : "Flutter Eigen Vectors",
+      "dataType" : "file",
+      "order" : 19,
+      "description" : "Defines the name of the output containing the results (flutter eigen vectors) of IDEA.",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "Fm_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_Mach",
+      "title" : "Flutter Mach",
+      "dataType" : "",
+      "order" : 3,
+      "description" : "Mach number is matched to each speed-steps (Mach=V/Vsound)",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Method of Definition", "Mach Number" ],
+      "columnTypes" : [ "list:definition-method-mach", "float" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "fixed"
+      }, {
+        "value" : 0.499
+      } ] ]
+    }, {
+      "name" : "flutter_plot_Iterations",
+      "title" : "Flutter Plot Iterations",
+      "dataType" : "file",
+      "order" : 17,
+      "description" : "Name of the output containing the results (number of iterations) of IDEA",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "V_It_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_density",
+      "title" : "Flutter Density",
+      "dataType" : "",
+      "order" : 4,
+      "description" : "The density is computed with the ISA standard atmosphere out of the altitude",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Method of Definition", "Density" ],
+      "columnTypes" : [ "list:definition-method-density", "float" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "fixed"
+      }, {
+        "value" : 0.427648
+      } ] ]
+    }, {
+      "name" : "analysis",
+      "title" : "Analysis",
+      "dataType" : "string",
+      "order" : 0,
+      "description" : "Define the analysis as a flutter analysis",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "flutter"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : true,
+      "mandatory" : false,
+      "paallowed" : false,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_point_variable_SI2output",
+      "title" : "Flutter Plot Conversion Factor",
+      "dataType" : "float",
+      "order" : 21,
+      "description" : "Flutter curves in m/s factor to multiply the flutter variable in SI with to obtain the wished unit in the output-files",
+      "shortDescription" : "",
+      "value" : {
+        "value" : 1.0
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "model_filename",
+      "title" : "Model File name",
+      "dataType" : "file",
+      "order" : 12,
+      "description" : "Name of the model-file",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "model.in"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_plot_variable",
+      "title" : "Flutter Plot Variable",
+      "dataType" : "list",
+      "order" : 20,
+      "description" : "For the output files, which flutter variable has to be written (TAS, EAS or dynamic pressure)",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "TAS"
+      },
+      "listName" : "flutter-plot-variable",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_maxit",
+      "title" : "Flutter Max Iterations",
+      "dataType" : "int",
+      "order" : 10,
+      "description" : "Maximum number of iterations for the convergence of flutter eigenvalues",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "100"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_start_fbound",
+      "title" : "Flutter Frequency Interval",
+      "dataType" : "",
+      "order" : 8,
+      "description" : "interval of frequencies (if the time unit is in second, then in Hertz) have to be considered at the first speed step (defined in flutter_V)",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Lower Bound", "Upper Bound" ],
+      "columnTypes" : [ "string", "string" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "-0.01"
+      }, {
+        "value" : "Inf"
+      } ] ]
+    }, {
+      "name" : "flutter_plot_Im_eigenvalue",
+      "title" : "Flutter Plot Im Eigen",
+      "dataType" : "file",
+      "order" : 16,
+      "description" : "Name of the output containing the results (imaginary part of the eigenvalues) of IDEA.",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "V_Ims_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter",
+      "title" : "Flutter Method",
+      "dataType" : "",
+      "order" : 1,
+      "description" : "PK-method, direct eigensolver",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Flutter Method", "Eigen mode" ],
+      "columnTypes" : [ "list:flutter-method", "list:eigen-mode" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : false,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "PK"
+      }, {
+        "value" : "eig"
+      } ] ]
+    }, {
+      "name" : "flutter_V",
+      "title" : "Speed Steps",
+      "dataType" : "",
+      "order" : 11,
+      "description" : "Speed steps (True Air Speed, in SI, i.e. m/s) for the flutter analysis.",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "First Step", "Last Step", "No. of Speed Steps" ],
+      "columnTypes" : [ "float", "float", "int" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : 50.0
+      }, {
+        "value" : 320.0
+      }, {
+        "value" : 271
+      } ] ]
+    }, {
+      "name" : "flutter_plot_f",
+      "title" : "Flutter Plot F",
+      "dataType" : "file",
+      "order" : 14,
+      "description" : "Name of the output containing the results (frequency) of IDEA.",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "Vf_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_plot_g",
+      "title" : "Flutter Plot G",
+      "dataType" : "file",
+      "order" : 13,
+      "description" : "Name of the output containing the results (damping) of IDEA.",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "Vg_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_plot_Re_eigenvalue",
+      "title" : "Flutter Plot Re Eigen",
+      "dataType" : "file",
+      "order" : 15,
+      "description" : "Name of the output containing the results (real part of the eigenvalues) of IDEA",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "V_Res_test"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "flutter_V_sound",
+      "title" : "Flutter V Sound",
+      "dataType" : "",
+      "order" : 5,
+      "description" : "The speed of sound is computed with the ISA standard atmosphere out of the altitude",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Method of definition", "Air Speed" ],
+      "columnTypes" : [ "list:definition-method-density", "float" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "fixed"
+      }, {
+        "value" : 345.59
+      } ] ]
+    }, {
+      "name" : "conv_model2SI_density",
+      "title" : "Density Conversion Factor",
+      "dataType" : "float",
+      "order" : 6,
+      "description" : "Conversion factor between the density in model units and SI",
+      "shortDescription" : "",
+      "value" : {
+        "value" : 11.0
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "conv_model2SI_speed",
+      "title" : "Speed Conversion Factor",
+      "dataType" : "float",
+      "order" : 7,
+      "description" : "Conversion factor between the speed in model units and SI. Also used for lengths (cf. L_ref)",
+      "shortDescription" : "",
+      "value" : {
+        "value" : 21.0
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    } ],
+    "document" : {
+      "title" : "Input file (param.in)",
+      "paragraphs" : [ {
+        "sequence" : 0,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "analysis",
+          "title" : "Analysis",
+          "dataType" : "string",
+          "order" : 0,
+          "description" : "Define the analysis as a flutter analysis",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "flutter"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : true,
+          "mandatory" : false,
+          "paallowed" : false,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 1,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter",
+          "title" : "Flutter Method",
+          "dataType" : "",
+          "order" : 1,
+          "description" : "PK-method, direct eigensolver",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Flutter Method", "Eigen mode" ],
+          "columnTypes" : [ "list:flutter-method", "list:eigen-mode" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : false,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "PK"
+          }, {
+            "value" : "eig"
+          } ] ]
+        }
+      }, {
+        "sequence" : 2,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_altitude",
+          "title" : "Flutter Altitude",
+          "dataType" : "",
+          "order" : 2,
+          "description" : "Geo-potential altitude in m for the analysis",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Type of Altitude", "Value of Altitude" ],
+          "columnTypes" : [ "list:altitude-type", "float" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "geopotential"
+          }, {
+            "value" : 0.0
+          } ] ]
+        }
+      }, {
+        "sequence" : 3,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_Mach",
+          "title" : "Flutter Mach",
+          "dataType" : "",
+          "order" : 3,
+          "description" : "Mach number is matched to each speed-steps (Mach=V/Vsound)",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Method of Definition", "Mach Number" ],
+          "columnTypes" : [ "list:definition-method-mach", "float" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "fixed"
+          }, {
+            "value" : 0.499
+          } ] ]
+        }
+      }, {
+        "sequence" : 4,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_density",
+          "title" : "Flutter Density",
+          "dataType" : "",
+          "order" : 4,
+          "description" : "The density is computed with the ISA standard atmosphere out of the altitude",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Method of Definition", "Density" ],
+          "columnTypes" : [ "list:definition-method-density", "float" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "fixed"
+          }, {
+            "value" : 0.427648
+          } ] ]
+        }
+      }, {
+        "sequence" : 5,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_V_sound",
+          "title" : "Flutter V Sound",
+          "dataType" : "",
+          "order" : 5,
+          "description" : "The speed of sound is computed with the ISA standard atmosphere out of the altitude",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Method of definition", "Air Speed" ],
+          "columnTypes" : [ "list:definition-method-density", "float" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "fixed"
+          }, {
+            "value" : 345.59
+          } ] ]
+        }
+      }, {
+        "sequence" : 6,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "conv_model2SI_density",
+          "title" : "Density Conversion Factor",
+          "dataType" : "float",
+          "order" : 6,
+          "description" : "Conversion factor between the density in model units and SI",
+          "shortDescription" : "",
+          "value" : {
+            "value" : 11.0
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 7,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "conv_model2SI_speed",
+          "title" : "Speed Conversion Factor",
+          "dataType" : "float",
+          "order" : 7,
+          "description" : "Conversion factor between the speed in model units and SI. Also used for lengths (cf. L_ref)",
+          "shortDescription" : "",
+          "value" : {
+            "value" : 21.0
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 8,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_start_fbound",
+          "title" : "Flutter Frequency Interval",
+          "dataType" : "",
+          "order" : 8,
+          "description" : "interval of frequencies (if the time unit is in second, then in Hertz) have to be considered at the first speed step (defined in flutter_V)",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Lower Bound", "Upper Bound" ],
+          "columnTypes" : [ "string", "string" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "-0.01"
+          }, {
+            "value" : "Inf"
+          } ] ]
+        }
+      }, {
+        "sequence" : 9,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_frequency_tolerance",
+          "title" : "Flutter Frequency Tolerance",
+          "dataType" : "float",
+          "order" : 9,
+          "description" : "Convergence tolerance for the flutter eigenvalues, in frequency (if the time unit is in second, then in Hertz)",
+          "shortDescription" : "",
+          "value" : {
+            "value" : 1.0E-7
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 10,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_maxit",
+          "title" : "Flutter Max Iterations",
+          "dataType" : "int",
+          "order" : 10,
+          "description" : "Maximum number of iterations for the convergence of flutter eigenvalues",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "100"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 11,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_V",
+          "title" : "Speed Steps",
+          "dataType" : "",
+          "order" : 11,
+          "description" : "Speed steps (True Air Speed, in SI, i.e. m/s) for the flutter analysis.",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "First Step", "Last Step", "No. of Speed Steps" ],
+          "columnTypes" : [ "float", "float", "int" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : 50.0
+          }, {
+            "value" : 320.0
+          }, {
+            "value" : 271
+          } ] ]
+        }
+      }, {
+        "sequence" : 12,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "model_filename",
+          "title" : "Model File name",
+          "dataType" : "file",
+          "order" : 12,
+          "description" : "Name of the model-file",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "model.in"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 13,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_g",
+          "title" : "Flutter Plot G",
+          "dataType" : "file",
+          "order" : 13,
+          "description" : "Name of the output containing the results (damping) of IDEA.",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "Vg_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 14,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_f",
+          "title" : "Flutter Plot F",
+          "dataType" : "file",
+          "order" : 14,
+          "description" : "Name of the output containing the results (frequency) of IDEA.",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "Vf_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 15,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_Re_eigenvalue",
+          "title" : "Flutter Plot Re Eigen",
+          "dataType" : "file",
+          "order" : 15,
+          "description" : "Name of the output containing the results (real part of the eigenvalues) of IDEA",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "V_Res_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 16,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_Im_eigenvalue",
+          "title" : "Flutter Plot Im Eigen",
+          "dataType" : "file",
+          "order" : 16,
+          "description" : "Name of the output containing the results (imaginary part of the eigenvalues) of IDEA.",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "V_Ims_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 17,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_Iterations",
+          "title" : "Flutter Plot Iterations",
+          "dataType" : "file",
+          "order" : 17,
+          "description" : "Name of the output containing the results (number of iterations) of IDEA",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "V_It_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 18,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_points",
+          "title" : "Flutter Points",
+          "dataType" : "file",
+          "order" : 18,
+          "description" : "Defines the name of the output containing the results (flutter points) of IDEA",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "Fp_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 19,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_eigenvectors",
+          "title" : "Flutter Eigen Vectors",
+          "dataType" : "file",
+          "order" : 19,
+          "description" : "Defines the name of the output containing the results (flutter eigen vectors) of IDEA.",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "Fm_test"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 20,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_plot_variable",
+          "title" : "Flutter Plot Variable",
+          "dataType" : "list",
+          "order" : 20,
+          "description" : "For the output files, which flutter variable has to be written (TAS, EAS or dynamic pressure)",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "TAS"
+          },
+          "listName" : "flutter-plot-variable",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 21,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "flutter_point_variable_SI2output",
+          "title" : "Flutter Plot Conversion Factor",
+          "dataType" : "float",
+          "order" : 21,
+          "description" : "Flutter curves in m/s factor to multiply the flutter variable in SI with to obtain the wished unit in the output-files",
+          "shortDescription" : "",
+          "value" : {
+            "value" : 1.0
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      } ]
+    },
+    "parametersInParameterAnalysis" : [ ]
+  },
+  "modelIn" : {
+    "name" : "model.in",
+    "parameters" : [ {
+      "name" : "rm_dof",
+      "title" : "",
+      "dataType" : "float",
+      "order" : 17,
+      "description" : "Remove some degrees of freedom of the input (modal) matrices by suppressing the rows and columns bound to them",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "1.0"
+      },
+      "listName" : "",
+      "columnNames" : [ "Degree of freedom to be removed" ],
+      "columnTypes" : [ "int" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "FCS_modal2sensors",
+      "title" : "",
+      "dataType" : "",
+      "order" : 12,
+      "description" : "Path to the matrix relating the modal amplitudes (input of the FCS) to the sensors' displacements (saved in the NASTRAN Output4 format).",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "FCS_state_space_C",
+      "title" : "",
+      "dataType" : "",
+      "order" : 10,
+      "description" : "Path to the FCS state (or system) matrix C (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "FCS_actuators2modal",
+      "title" : "",
+      "dataType" : "",
+      "order" : 13,
+      "description" : "Path to the matrix relating the actuators' (or control surfaces') movement (output of the FCS) to the modal amplitudes (saved in the NASTRAN Output4 format).",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "FCS_state_space_B",
+      "title" : "",
+      "dataType" : "",
+      "order" : 9,
+      "description" : "Path to the FCS state (or system) matrix B (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "FCS_state_space_A",
+      "title" : "",
+      "dataType" : "",
+      "order" : 8,
+      "description" : "Path to the FCS state (or system) matrix A (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "K",
+      "title" : "K",
+      "dataType" : "string",
+      "order" : 0,
+      "description" : "Path to the model's stiffness matrix (saved in the NASTRAN Output4 format)Define the analysis as a flutter analysis",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "flutter"
+      },
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix", "File Name (OP4)" ],
+      "columnTypes" : [ "int", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : true,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "1"
+      }, {
+        "value" : "my_path/KHH.OP4"
+      } ] ]
+    }, {
+      "name" : "M",
+      "title" : "M",
+      "dataType" : "",
+      "order" : 2,
+      "description" : "Path to the model's mass matrix (saved in the NASTRAN Output4 format).",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix", "File Name (OP4)" ],
+      "columnTypes" : [ "int", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "1"
+      }, {
+        "value" : "my_path/MHH.OP4"
+      } ] ]
+    }, {
+      "name" : "GAF",
+      "title" : "GAF",
+      "dataType" : "",
+      "order" : 4,
+      "description" : "Paths to the model's generalized aerodynamics matrices (complex, saved in the NASTRAN Output format).",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "1.0"
+      },
+      "listName" : "",
+      "columnNames" : [ "Mach Number", "Reduced Frequency", "Position of Matrix", "Name of OP4 File" ],
+      "columnTypes" : [ "float", "float", "int", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "00.499"
+      }, {
+        "value" : "0"
+      }, {
+        "value" : "1"
+      }, {
+        "value" : "my_path/QHHS0101.OP4"
+      } ], [ {
+        "value" : "0.499"
+      }, {
+        "value" : "0.01"
+      }, {
+        "value" : "1"
+      }, {
+        "value" : "my_path/QHHS0102.OP4"
+      } ] ]
+    }, {
+      "name" : "GAF_RAE",
+      "title" : "",
+      "dataType" : "",
+      "order" : 6,
+      "description" : "Paths to the model's generalized aerodynamics matrices (real, saved in the NASTRAN Output4 format) in the RAEformulation (aerodynamic damping [B] and stiffness [C] matrices). GAF_method does not apply for these aerodynamic matrices. A factor can be defined to use also this input for the BAE-formulation.",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "1.0"
+      },
+      "listName" : "",
+      "columnNames" : [ "Mach Number", "Reduced Frequency", "Conversion Factor", "Position of B Matrix", "Name of OP4 File", "Position of C Matrix", "Name of OP4 File" ],
+      "columnTypes" : [ "float", "float", "float", "int", "file", "int", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ ]
+    }, {
+      "name" : "FCS_state_space_D",
+      "title" : "",
+      "dataType" : "",
+      "order" : 11,
+      "description" : "Path to the FCS feed through (or feed forward) matrix D (real, saved in the NASTRAN Output4 format) in state-space modelling, optional (then the D matrix is zero).",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "",
+      "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+      "columnTypes" : [ "string", "file" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : null
+    }, {
+      "name" : "GAF_method",
+      "title" : "",
+      "dataType" : "list",
+      "order" : 5,
+      "description" : "Defines the way to use the generalized aerodynamics when imported with GAF. This has effects on the influence of the damping on the aerodynamics, but not on the flutter points",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "Hassig"
+      },
+      "listName" : "gaf-interpretation",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "g_struct",
+      "title" : "g_struct",
+      "dataType" : "float",
+      "order" : 3,
+      "description" : "Structural Damping value (g)",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "0.0"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "Aero_interp",
+      "title" : "",
+      "dataType" : "list",
+      "order" : 14,
+      "description" : "Interpolation method for the aerodynamics",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "pchip"
+      },
+      "listName" : "aero-interpolation-method",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "L_ref",
+      "title" : "",
+      "dataType" : "float",
+      "order" : 16,
+      "description" : "Reference length for the aerodynamics (e.g. reduced frequency: k=Ï‰*L_ref/V)",
+      "shortDescription" : "",
+      "value" : {
+        "value" : "1"
+      },
+      "listName" : "",
+      "columnNames" : null,
+      "columnTypes" : null,
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : true,
+      "paallowed" : true,
+      "singleRow" : false,
+      "paenabled" : false,
+      "isTabularData" : false,
+      "tabularData" : null
+    }, {
+      "name" : "Aero_extrap",
+      "title" : "",
+      "dataType" : "list",
+      "order" : 15,
+      "description" : "Extrapolation method for the aerodynamics",
+      "shortDescription" : "",
+      "value" : null,
+      "listName" : "aero-extrapolation-method",
+      "columnNames" : [ "Method for Mach Number", "Method for Reduced Frequency" ],
+      "columnTypes" : [ "list:aero-extrapolation-method", "list:aero-extrapolation-method" ],
+      "parameterAnalysis" : {
+        "paValueList" : [ ],
+        "paValueRange" : [ ],
+        "paRowList" : null,
+        "paTableList" : [ ]
+      },
+      "readOnly" : false,
+      "mandatory" : false,
+      "paallowed" : true,
+      "singleRow" : true,
+      "paenabled" : false,
+      "isTabularData" : true,
+      "tabularData" : [ [ {
+        "value" : "constant"
+      }, {
+        "value" : "linear"
+      } ] ]
+    } ],
+    "document" : {
+      "title" : "Input file (model.in)",
+      "paragraphs" : [ {
+        "sequence" : 0,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "K",
+          "title" : "K",
+          "dataType" : "string",
+          "order" : 0,
+          "description" : "Path to the model's stiffness matrix (saved in the NASTRAN Output4 format)Define the analysis as a flutter analysis",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "flutter"
+          },
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix", "File Name (OP4)" ],
+          "columnTypes" : [ "int", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : true,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "1"
+          }, {
+            "value" : "my_path/KHH.OP4"
+          } ] ]
+        }
+      }, {
+        "sequence" : 1,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "M",
+          "title" : "M",
+          "dataType" : "",
+          "order" : 2,
+          "description" : "Path to the model's mass matrix (saved in the NASTRAN Output4 format).",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix", "File Name (OP4)" ],
+          "columnTypes" : [ "int", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "1"
+          }, {
+            "value" : "my_path/MHH.OP4"
+          } ] ]
+        }
+      }, {
+        "sequence" : 2,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "g_struct",
+          "title" : "g_struct",
+          "dataType" : "float",
+          "order" : 3,
+          "description" : "Structural Damping value (g)",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "0.0"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 3,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "GAF",
+          "title" : "GAF",
+          "dataType" : "",
+          "order" : 4,
+          "description" : "Paths to the model's generalized aerodynamics matrices (complex, saved in the NASTRAN Output format).",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "1.0"
+          },
+          "listName" : "",
+          "columnNames" : [ "Mach Number", "Reduced Frequency", "Position of Matrix", "Name of OP4 File" ],
+          "columnTypes" : [ "float", "float", "int", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "00.499"
+          }, {
+            "value" : "0"
+          }, {
+            "value" : "1"
+          }, {
+            "value" : "my_path/QHHS0101.OP4"
+          } ], [ {
+            "value" : "0.499"
+          }, {
+            "value" : "0.01"
+          }, {
+            "value" : "1"
+          }, {
+            "value" : "my_path/QHHS0102.OP4"
+          } ] ]
+        }
+      }, {
+        "sequence" : 4,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "GAF_method",
+          "title" : "",
+          "dataType" : "list",
+          "order" : 5,
+          "description" : "Defines the way to use the generalized aerodynamics when imported with GAF. This has effects on the influence of the damping on the aerodynamics, but not on the flutter points",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "Hassig"
+          },
+          "listName" : "gaf-interpretation",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 5,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "GAF_RAE",
+          "title" : "",
+          "dataType" : "",
+          "order" : 6,
+          "description" : "Paths to the model's generalized aerodynamics matrices (real, saved in the NASTRAN Output4 format) in the RAEformulation (aerodynamic damping [B] and stiffness [C] matrices). GAF_method does not apply for these aerodynamic matrices. A factor can be defined to use also this input for the BAE-formulation.",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "1.0"
+          },
+          "listName" : "",
+          "columnNames" : [ "Mach Number", "Reduced Frequency", "Conversion Factor", "Position of B Matrix", "Name of OP4 File", "Position of C Matrix", "Name of OP4 File" ],
+          "columnTypes" : [ "float", "float", "float", "int", "file", "int", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ ]
+        }
+      }, {
+        "sequence" : 6,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_state_space_A",
+          "title" : "",
+          "dataType" : "",
+          "order" : 8,
+          "description" : "Path to the FCS state (or system) matrix A (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 7,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_state_space_B",
+          "title" : "",
+          "dataType" : "",
+          "order" : 9,
+          "description" : "Path to the FCS state (or system) matrix B (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 8,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_state_space_C",
+          "title" : "",
+          "dataType" : "",
+          "order" : 10,
+          "description" : "Path to the FCS state (or system) matrix C (real, saved in the NASTRAN Output4 format) in state-space modeling.",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 9,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_state_space_D",
+          "title" : "",
+          "dataType" : "",
+          "order" : 11,
+          "description" : "Path to the FCS feed through (or feed forward) matrix D (real, saved in the NASTRAN Output4 format) in state-space modelling, optional (then the D matrix is zero).",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 10,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_modal2sensors",
+          "title" : "",
+          "dataType" : "",
+          "order" : 12,
+          "description" : "Path to the matrix relating the modal amplitudes (input of the FCS) to the sensors' displacements (saved in the NASTRAN Output4 format).",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 11,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "FCS_actuators2modal",
+          "title" : "",
+          "dataType" : "",
+          "order" : 13,
+          "description" : "Path to the matrix relating the actuators' (or control surfaces') movement (output of the FCS) to the modal amplitudes (saved in the NASTRAN Output4 format).",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "",
+          "columnNames" : [ "Position of Matrix File", "Name of OP4 File" ],
+          "columnTypes" : [ "string", "file" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 12,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "Aero_interp",
+          "title" : "",
+          "dataType" : "list",
+          "order" : 14,
+          "description" : "Interpolation method for the aerodynamics",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "pchip"
+          },
+          "listName" : "aero-interpolation-method",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 13,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "Aero_extrap",
+          "title" : "",
+          "dataType" : "list",
+          "order" : 15,
+          "description" : "Extrapolation method for the aerodynamics",
+          "shortDescription" : "",
+          "value" : null,
+          "listName" : "aero-extrapolation-method",
+          "columnNames" : [ "Method for Mach Number", "Method for Reduced Frequency" ],
+          "columnTypes" : [ "list:aero-extrapolation-method", "list:aero-extrapolation-method" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : true,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : [ [ {
+            "value" : "constant"
+          }, {
+            "value" : "linear"
+          } ] ]
+        }
+      }, {
+        "sequence" : 14,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "L_ref",
+          "title" : "",
+          "dataType" : "float",
+          "order" : 16,
+          "description" : "Reference length for the aerodynamics (e.g. reduced frequency: k=Ï‰*L_ref/V)",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "1"
+          },
+          "listName" : "",
+          "columnNames" : null,
+          "columnTypes" : null,
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : true,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : false,
+          "tabularData" : null
+        }
+      }, {
+        "sequence" : 15,
+        "comments" : null,
+        "useParamDescAsComment" : true,
+        "isBlankLine" : false,
+        "isComment" : false,
+        "isParameter" : true,
+        "parameter" : {
+          "name" : "rm_dof",
+          "title" : "",
+          "dataType" : "float",
+          "order" : 17,
+          "description" : "Remove some degrees of freedom of the input (modal) matrices by suppressing the rows and columns bound to them",
+          "shortDescription" : "",
+          "value" : {
+            "value" : "1.0"
+          },
+          "listName" : "",
+          "columnNames" : [ "Degree of freedom to be removed" ],
+          "columnTypes" : [ "int" ],
+          "parameterAnalysis" : {
+            "paValueList" : [ ],
+            "paValueRange" : [ ],
+            "paRowList" : null,
+            "paTableList" : [ ]
+          },
+          "readOnly" : false,
+          "mandatory" : false,
+          "paallowed" : true,
+          "singleRow" : false,
+          "paenabled" : false,
+          "isTabularData" : true,
+          "tabularData" : null
+        }
+      } ]
+    },
+    "parametersInParameterAnalysis" : [ ]
+  },
+  "status" : "DOCS_VALIDATED",
+  "executionPlans" : [ {
+    "name" : "Runner1",
+    "method" : "Serial",
+    "useConstraints" : false,
+    "constraints" : [ ],
+    "valueCombinationList" : [ {
+      "params" : [ "analysis" ],
+      "values" : [ [ [ {
+        "value" : "flutter"
+      } ] ] ],
+      "label" : "dsfa sdf_Runner1_1"
+    } ]
+  } ],
+  "processCreated" : true,
+  "ideaSessionId" : 1437719144681,
+  "jobsMD" : null,
+  "executionPlanName" : "Runner1",
+  "fileVersion" : "0.0"
+}
